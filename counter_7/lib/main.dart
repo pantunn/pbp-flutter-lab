@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.brown,
       ),
-      home: const MyHomePage(title: 'Program Counter'),
+      home: const MyHomePage(title: 'Program Counter 😃'),
     );
   }
 }
@@ -49,8 +49,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  String genap = 'genap';
-  String ganjil = 'ganjil'; 
+  String genap = 'genap ✌🏻';
+  String ganjil = 'ganjil ☝🏻'; 
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -106,10 +106,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             if (_counter % 2 == 0)... [
-              const Text('Genap',),
+              const Text('GENAP',
+              style:TextStyle(color: Colors.red),), 
             ]else...[
-              const Text(
-              'Ganjil',),
+              const Text('GANJIL',
+              style: TextStyle(color: Colors.blue),), 
             ],
             Text(
               '$_counter',
@@ -125,17 +126,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            FloatingActionButton(
+            if (_counter == 0)... {
+              
+              Expanded(child: Container()),
+              FloatingActionButton(
+                onPressed: _incrementCounter,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ), // This trailing comma makes auto-formatting nicer for build methods.
+            }
+            else... {
+              FloatingActionButton(
+              
               onPressed: _decrementCounter,
               tooltip: 'Decrement',
               child: const Icon(Icons.remove),
-            ), // This trailing comma makes auto-formatting nicer for build methods.
-            Expanded(child: Container()),
-            FloatingActionButton(
-              onPressed: _incrementCounter,
-              tooltip: 'Increment',
-              child: const Icon(Icons.add),
-            ), // This trailing comma makes auto-formatting nicer for build methods.
+              ), // This trailing comma makes auto-formatting nicer for build methods.
+              Expanded(child: Container()),
+              FloatingActionButton(
+                onPressed: _incrementCounter,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ), // This trailing comma makes auto-formatting nicer for build methods.
+            }
+            
           ],
         )
         

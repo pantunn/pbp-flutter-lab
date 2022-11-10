@@ -1,16 +1,22 @@
-# counter_7
+Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
+Statelss widget adalah widget yang tidak dapat berubah-ubah atau statis sedangkan statefull widget adalah jenis widget yang dapat berubah-ubah atau dinamis
 
-A new Flutter project.
+Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+ 1. Row = menampilakan tampilan horizontal pada children
+ 2. Container = widget yang digunakan untuk membungkus widget lain 
+ 3. Scaffold = widget yang digunakan untuk membuat halamat di flutter
+ 4. Appbar = menampilkan toolbar di flutter
 
-## Getting Started
+Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
+setState() digunakan merencanakan suatu pembaruan ke dalam state objek komponen yang nantinya waktu state berubah maka komponen akan merespon dengan me-render ulang. Variabel yang dapat terpengaruh dari fungsi tersebut adalah variabel yang diganti pada fungsi tersebut.
 
-This project is a starting point for a Flutter application.
+Jelaskan perbedaan antara const dengan final.
+variabel dari final tidak dapat diubah di masa yang akan datang dan sudah terfiksasi sedangkan final sama seperti const tetapi perbedaannya const membuat variabel konstan hanya di compile-time  
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+    1. membuat app bernama counter_7
+    2. menambah tombol + dan - yang berfungsi untuk menambah dan menghurangkan angka yang ada di display
+    3. menampilkan angka di display
+    4. menampilkan jenis bilangan genap atau ganjil berdasarkan bilangan yang muncul
+    5. apabila angka mencapai 0 maka tidak dapat dilakukan decrement lagi.
+    6. menghilangkan tombol decrement apabila angka mencapai 0
