@@ -1,3 +1,19 @@
+
+
+#Tugas 8
+
+ Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+ Navigator.push (): Metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru ditampilkan di atas halaman sebelumnya.
+ 
+ 
+ Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+ 
+ Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+ Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+
+#Tugas 7
 Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Statelss widget adalah widget yang tidak dapat berubah-ubah atau statis sedangkan statefull widget adalah jenis widget yang dapat berubah-ubah atau dinamis
 
