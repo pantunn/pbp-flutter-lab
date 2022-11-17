@@ -28,10 +28,7 @@ class _BudgetListState extends State<Budget> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(element.type),
-                    Text("${element.date.year.toString()}-${element.date.month.toString().padLeft(2,'0')}-${element.date.day.toString().padLeft(2,'0')}",
-                    style: const TextStyle(
-                      color: Colors.grey,
-                    )),
+                    
                   ],
                 ),
               ),

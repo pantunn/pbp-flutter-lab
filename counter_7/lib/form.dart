@@ -16,10 +16,10 @@ class _BudgetFormState extends State<BudgetForm> {
   String? _title;
   int? _nominal;
   String? _type;
-  DateTime _dateTime = DateTime.now();
+
   final _titleController = TextEditingController();
   final _nominalController = TextEditingController();
-  final _dateController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -113,31 +113,7 @@ class _BudgetFormState extends State<BudgetForm> {
                 Padding(
                   // Using padding of 8 pixels
                   padding: const EdgeInsets.all(8.0),
-                  child: TextFormField(
-                    readOnly: true,
-                    controller: _dateController,
-                    decoration: InputDecoration(
-                      icon: const Icon(Icons.calendar_today),
-                      labelText: "Date",
-                      // Added a circular border to make it neater
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(5.0),
-                      ),
-                    ),
-                    onTap: () {
-                      showDatePicker(
-                        context: context,
-                        initialDate: DateTime.now(),
-                        firstDate: DateTime(2000),
-                        lastDate: DateTime(2050),
-                      ).then((date) {
-                        setState(() {
-                          _dateTime = date!;
-                          _dateController.text = "${_dateTime.year.toString()}-${_dateTime.month.toString().padLeft(2,'0')}-${_dateTime.day.toString().padLeft(2,'0')}";
-                        });
-                      });
-                    },
-                  ),
+                  
                 ),
 
                 // Dropdown
@@ -185,7 +161,7 @@ class _BudgetFormState extends State<BudgetForm> {
                     title: _title!,
                     nominal: _nominal!,
                     type: _type!,
-                    date: _dateTime,
+                 
                 )
             );
             _titleController.clear();
