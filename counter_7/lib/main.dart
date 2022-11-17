@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_1/drawer.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -85,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+      drawer: const MyDrawer(),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
