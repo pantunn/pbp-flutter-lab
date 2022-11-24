@@ -1,3 +1,32 @@
+#Tugas 9
+Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Ya kita Bisa dengan melakukan penganmbilan data json tanpa buat model terlebih dahulu dengan menggunakan manual serialization built-in JSON decoder dari dart:convert 
+
+Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+Column : untuk  menampilkan widgets children pada format kolom vertikal
+Row : untuk menampilkan widgets children pada format baris horizontal
+Text :  untuk menampilkan string
+Drawer :  untuk menampilkan tautan navigasi
+ListView : untuk menampilkan children satu per satu
+FutureBuilder : membuat builder berdasarkan objek Future secara asynchronous
+
+
+Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+melakukan perintah flutter pub add http pada terminal proyek Flutter 
+menambahkan potongan kode <uses-permission android:name="android.permission.INTERNET" /> pada android/app/src/main/AndroidManifest.xml 
+Membuat model pada model menggunakan quicktype
+Melakukan pengambilan data menggunakan method http.get.
+Mengkonversikan objek yang didapatkan menjadi model yang telah kita buat.
+Menampilkan data pada Flutter menggunakan FutureBuilder.
+
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+Membuat dan menambahkan mywatchlist ke Drawer 
+Membuat model menggunakan quicktype
+melakukan dan method untuk fetch data dari https://pantun-katalog.herokuapp.com/mywatchlist/json/ 
+Menampilkan data pada Flutter menggunakan FutureBuilder.
+Membuat halaman detail untuk tiap watchlist.
+
 
 
 #Tugas 8
