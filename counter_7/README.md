@@ -1,4 +1,4 @@
-#Tugas 9
+##Tugas 9
 Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 Ya kita Bisa dengan melakukan penganmbilan data json tanpa buat model terlebih dahulu dengan menggunakan manual serialization built-in JSON decoder dari dart:convert 
 
