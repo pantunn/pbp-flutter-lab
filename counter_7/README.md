@@ -1,9 +1,9 @@
-#Tugas 9
+# Tugas 9
 
-Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 Ya kita Bisa dengan melakukan penganmbilan data json tanpa buat model terlebih dahulu dengan menggunakan manual serialization built-in JSON decoder dari dart:convert 
 
-Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 Column : untuk  menampilkan widgets children pada format kolom vertikal
 Row : untuk menampilkan widgets children pada format baris horizontal
 Text :  untuk menampilkan string
@@ -12,7 +12,7 @@ ListView : untuk menampilkan children satu per satu
 FutureBuilder : membuat builder berdasarkan objek Future secara asynchronous
 
 
-Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
 melakukan perintah flutter pub add http pada terminal proyek Flutter 
 menambahkan potongan kode <uses-permission android:name="android.permission.INTERNET" /> pada android/app/src/main/AndroidManifest.xml 
 Membuat model pada model menggunakan quicktype
@@ -21,7 +21,7 @@ Mengkonversikan objek yang didapatkan menjadi model yang telah kita buat.
 Menampilkan data pada Flutter menggunakan FutureBuilder.
 
 
-Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
 Membuat dan menambahkan mywatchlist ke Drawer 
 Membuat model menggunakan quicktype
 melakukan dan method untuk fetch data dari https://pantun-katalog.herokuapp.com/mywatchlist/json/ 
@@ -30,7 +30,7 @@ Membuat halaman detail untuk tiap watchlist.
 
 
 
-#Tugas 8
+# Tugas 8
 
  Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
  Navigator.push (): Metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru ditampilkan di atas halaman sebelumnya.
@@ -64,7 +64,7 @@ Logic navigasi pada flutter bekerja seperti sebuah stack. Stack tersebut juga me
  Membuat file form.dart 
  Membuat file data.dart 
 
-#Tugas 7
+# Tugas 7
 Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Statelss widget adalah widget yang tidak dapat berubah-ubah atau statis sedangkan statefull widget adalah jenis widget yang dapat berubah-ubah atau dinamis
 
